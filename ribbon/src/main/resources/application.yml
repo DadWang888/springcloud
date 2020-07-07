@@ -1,0 +1,11 @@
+server:
+  port: 8040
+spring:
+  application:
+    name: ribbon
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    prefer-ip-address: true   #是否将当前服务的 IP 注册到 Eureka Server。    3.创建启动类
